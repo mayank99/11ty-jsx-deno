@@ -1,0 +1,13 @@
+{
+	"type": "module",
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "deno run clean && deno run -A npm:@11ty/eleventy@beta",
+		"dev": "deno run -A npm:@11ty/eleventy@beta --serve"
+	},
+	"dependencies": {
+		"@11ty/eleventy": "^3.0.0-beta.1",
+		"preact": "^10.23.2",
+		"preact-render-to-string": "^6.5.9"
+	}
+}
