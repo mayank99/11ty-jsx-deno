@@ -3,7 +3,6 @@
 		"lib": ["dom", "dom.asynciterable", "deno.ns", "deno.unstable"],
 		"jsx": "precompile",
 		"jsxImportSource": "npm:preact",
-		"jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"],
-		"types": ["@11ty/eleventy"]
+		"jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
 	}
 }

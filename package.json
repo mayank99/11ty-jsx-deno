@@ -2,8 +2,8 @@
 	"type": "module",
 	"scripts": {
 		"clean": "rm -rf dist",
-		"build": "deno run clean && deno run -A npm:@11ty/eleventy@beta",
-		"dev": "deno run -A npm:@11ty/eleventy@beta --serve"
+		"build": "deno run clean && deno run -A npm:@11ty/eleventy@beta --config=.eleventy.ts",
+		"dev": "deno run -A npm:@11ty/eleventy@beta --serve --config=.eleventy.ts"
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^3.0.0-beta.1",
