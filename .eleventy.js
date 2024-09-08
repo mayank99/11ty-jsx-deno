@@ -1,7 +1,7 @@
-import { eleventyJsxPlugin } from "./eleventyJsxPlugin.ts";
-import type { EleventyConfig, defineConfig } from "npm:11ty.ts";
+import { eleventyJsxPlugin } from "./eleventyJsxPlugin.js";
 
-export default function (eleventyConfig: EleventyConfig) {
+/** @type {ReturnType<typeof import("npm:11ty.ts").defineConfig>} */
+export default function (eleventyConfig) {
 	eleventyConfig.ignores?.add("README.md");
 
 	eleventyConfig.setServerPassthroughCopyBehavior("copy");
@@ -20,5 +20,5 @@ export default function (eleventyConfig: EleventyConfig) {
 			includes: "../_includes",
 			output: "dist",
 		},
-	} satisfies ReturnType<ReturnType<typeof defineConfig>>;
+	};
 }
