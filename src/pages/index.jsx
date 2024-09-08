@@ -1,6 +1,7 @@
 import { page, useEleventy } from "../EleventyContext.jsx";
 
-export default page(() => {
+export default page(function () {
+	console.log(this);
 	return (
 		<html lang="en">
 			<head>
