@@ -1,4 +1,5 @@
 {
+	"nodeModulesDir": "auto",
 	"compilerOptions": {
 		"lib": ["dom", "dom.asynciterable", "deno.ns", "deno.unstable"],
 		"jsx": "precompile",
