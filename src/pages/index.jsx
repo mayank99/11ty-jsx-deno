@@ -1,4 +1,7 @@
-export default function Page() {
+import { page, useEleventy } from "../EleventyContext.jsx";
+
+export default page(function () {
+	console.log(this);
 	return (
 		<html lang="en">
 			<head>
@@ -8,7 +11,15 @@ export default function Page() {
 			</head>
 			<body>
 				<h1>Hello!</h1>
+				<Test />
 			</body>
 		</html>
 	);
-}
+});
+
+const Test = () => {
+	const eleventy = useEleventy();
+	console.log(eleventy);
+
+	return null;
+};
